@@ -1,0 +1,6 @@
+#!/bin/bash
+
+swiftgen storyboards -t scenes-swift4 ./VerintTask --output ./VerintTask/Common/Constants/Storyboards.swift
+swiftgen storyboards -t segues-swift4 ./VerintTask --output ./VerintTask/Common/Constants/Segues.swift
+swiftgen xcassets -t swift4 ./VerintTask/Resources/Assets.xcassets --output ./VerintTask/Common/Constants/Images.swift
+swiftgen strings -t flat-swift4 ./VerintTask/Resources/Localization/en.lproj/Localizable.strings --output ./VerintTask/Common/Constants/Strings.swift

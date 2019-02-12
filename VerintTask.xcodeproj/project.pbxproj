@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		FFBAA0CC22130C1200931F3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0CB22130C1200931F3E /* AppDelegate.swift */; };
-		FFBAA0CE22130C1200931F3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0CD22130C1200931F3E /* ViewController.swift */; };
+		FFBAA0CE22130C1200931F3E /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0CD22130C1200931F3E /* MainSearchViewController.swift */; };
 		FFBAA0D122130C1200931F3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0CF22130C1200931F3E /* Main.storyboard */; };
 		FFBAA0D322130C1300931F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0D222130C1300931F3E /* Assets.xcassets */; };
 		FFBAA0D622130C1300931F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0D422130C1300931F3E /* LaunchScreen.storyboard */; };
+		FFBAA0E622130F3800931F3E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0E522130F3800931F3E /* DetailViewController.swift */; };
+		FFBAA0EA221311B100931F3E /* MainSearchControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0E9221311B100931F3E /* MainSearchControllerCell.xib */; };
+		FFBAA0EC221311E600931F3E /* MainSearchControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0EB221311E600931F3E /* MainSearchControllerCell.swift */; };
+		FFBAA0F322133D9300931F3E /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0F022133D9200931F3E /* Segues.swift */; };
+		FFBAA0F422133D9300931F3E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0F122133D9200931F3E /* Images.swift */; };
+		FFBAA0F522133D9300931F3E /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0F222133D9300931F3E /* Storyboards.swift */; };
+		FFBAA0F922133E3900931F3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0FB22133E3900931F3E /* Localizable.strings */; };
+		FFBAA0FD22133F9F00931F3E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0FC22133F9F00931F3E /* Strings.swift */; };
+		FFBAA101221340C500931F3E /* UIVIew+NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */; };
+		FFBAA102221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFBAA0C822130C1200931F3E /* VerintTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerintTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBAA0CB22130C1200931F3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFBAA0CD22130C1200931F3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFBAA0CD22130C1200931F3E /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		FFBAA0D022130C1200931F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFBAA0D222130C1300931F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFBAA0D522130C1300931F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFBAA0D722130C1300931F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBAA0E522130F3800931F3E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FFBAA0E9221311B100931F3E /* MainSearchControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSearchControllerCell.xib; sourceTree = "<group>"; };
+		FFBAA0EB221311E600931F3E /* MainSearchControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchControllerCell.swift; sourceTree = "<group>"; };
+		FFBAA0F022133D9200931F3E /* Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		FFBAA0F122133D9200931F3E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		FFBAA0F222133D9300931F3E /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		FFBAA0FA22133E3900931F3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFBAA0FC22133F9F00931F3E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+NibInstantiatable.swift"; sourceTree = "<group>"; };
+		FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiatable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +75,137 @@
 			isa = PBXGroup;
 			children = (
 				FFBAA0CB22130C1200931F3E /* AppDelegate.swift */,
-				FFBAA0CD22130C1200931F3E /* ViewController.swift */,
+				FFBAA0E222130ECE00931F3E /* Resources */,
+				FFBAA0DF22130E6300931F3E /* Common */,
+				FFBAA0E122130EAA00931F3E /* Modules */,
+			);
+			path = VerintTask;
+			sourceTree = "<group>";
+		};
+		FFBAA0DD22130E4300931F3E /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		FFBAA0DE22130E5900931F3E /* StorageLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StorageLayer;
+			sourceTree = "<group>";
+		};
+		FFBAA0DF22130E6300931F3E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0EF22133A6100931F3E /* Constants */,
+				FFBAA0E322130EF200931F3E /* Views */,
+				FFBAA0EE2213349A00931F3E /* Service layer */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FFBAA0E122130EAA00931F3E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0E422130F0400931F3E /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FFBAA0E222130ECE00931F3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0F822133E2600931F3E /* Localization */,
 				FFBAA0CF22130C1200931F3E /* Main.storyboard */,
 				FFBAA0D222130C1300931F3E /* Assets.xcassets */,
 				FFBAA0D422130C1300931F3E /* LaunchScreen.storyboard */,
 				FFBAA0D722130C1300931F3E /* Info.plist */,
 			);
-			path = VerintTask;
+			path = Resources;
 			sourceTree = "<group>";
+		};
+		FFBAA0E322130EF200931F3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FE221340C500931F3E /* NibInstantiatable */,
+				FFBAA0E72213118100931F3E /* TableCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFBAA0E422130F0400931F3E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0CD22130C1200931F3E /* MainSearchViewController.swift */,
+				FFBAA0E522130F3800931F3E /* DetailViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FFBAA0E72213118100931F3E /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0E82213118C00931F3E /* MainSearchControllerCell */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		FFBAA0E82213118C00931F3E /* MainSearchControllerCell */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0E9221311B100931F3E /* MainSearchControllerCell.xib */,
+				FFBAA0EB221311E600931F3E /* MainSearchControllerCell.swift */,
+			);
+			path = MainSearchControllerCell;
+			sourceTree = "<group>";
+		};
+		FFBAA0ED2213346400931F3E /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		FFBAA0EE2213349A00931F3E /* Service layer */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0ED2213346400931F3E /* Client */,
+				FFBAA0DE22130E5900931F3E /* StorageLayer */,
+				FFBAA0DD22130E4300931F3E /* ServiceLayer */,
+			);
+			path = "Service layer";
+			sourceTree = "<group>";
+		};
+		FFBAA0EF22133A6100931F3E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FC22133F9F00931F3E /* Strings.swift */,
+				FFBAA0F122133D9200931F3E /* Images.swift */,
+				FFBAA0F022133D9200931F3E /* Segues.swift */,
+				FFBAA0F222133D9300931F3E /* Storyboards.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FFBAA0F822133E2600931F3E /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FB22133E3900931F3E /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FFBAA0FE221340C500931F3E /* NibInstantiatable */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */,
+				FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */,
+			);
+			name = NibInstantiatable;
+			path = VerintTask/Common/NibInstantiatable;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -122,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBAA0F922133E3900931F3E /* Localizable.strings in Resources */,
+				FFBAA0EA221311B100931F3E /* MainSearchControllerCell.xib in Resources */,
 				FFBAA0D622130C1300931F3E /* LaunchScreen.storyboard in Resources */,
 				FFBAA0D322130C1300931F3E /* Assets.xcassets in Resources */,
 				FFBAA0D122130C1200931F3E /* Main.storyboard in Resources */,
@@ -135,8 +280,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBAA0CE22130C1200931F3E /* ViewController.swift in Sources */,
+				FFBAA102221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */,
+				FFBAA0EC221311E600931F3E /* MainSearchControllerCell.swift in Sources */,
+				FFBAA0F422133D9300931F3E /* Images.swift in Sources */,
+				FFBAA0FD22133F9F00931F3E /* Strings.swift in Sources */,
+				FFBAA101221340C500931F3E /* UIVIew+NibInstantiatable.swift in Sources */,
+				FFBAA0E622130F3800931F3E /* DetailViewController.swift in Sources */,
+				FFBAA0F322133D9300931F3E /* Segues.swift in Sources */,
+				FFBAA0CE22130C1200931F3E /* MainSearchViewController.swift in Sources */,
 				FFBAA0CC22130C1200931F3E /* AppDelegate.swift in Sources */,
+				FFBAA0F522133D9300931F3E /* Storyboards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +310,14 @@
 				FFBAA0D522130C1300931F3E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FFBAA0FB22133E3900931F3E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFBAA0FA22133E3900931F3E /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,7 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J845CVVRG5;
-				INFOPLIST_FILE = VerintTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VerintTask/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J845CVVRG5;
-				INFOPLIST_FILE = VerintTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VerintTask/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
