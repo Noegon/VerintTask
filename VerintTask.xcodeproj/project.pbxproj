@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FFBAA0CC22130C1200931F3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0CB22130C1200931F3E /* AppDelegate.swift */; };
-		FFBAA0CE22130C1200931F3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0CD22130C1200931F3E /* ViewController.swift */; };
+		FFBAA0CE22130C1200931F3E /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0CD22130C1200931F3E /* MainSearchViewController.swift */; };
 		FFBAA0D122130C1200931F3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0CF22130C1200931F3E /* Main.storyboard */; };
 		FFBAA0D322130C1300931F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0D222130C1300931F3E /* Assets.xcassets */; };
 		FFBAA0D622130C1300931F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0D422130C1300931F3E /* LaunchScreen.storyboard */; };
+		FFBAA0E622130F3800931F3E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0E522130F3800931F3E /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFBAA0C822130C1200931F3E /* VerintTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerintTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBAA0CB22130C1200931F3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFBAA0CD22130C1200931F3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFBAA0CD22130C1200931F3E /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		FFBAA0D022130C1200931F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFBAA0D222130C1300931F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFBAA0D522130C1300931F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFBAA0D722130C1300931F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBAA0E522130F3800931F3E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,78 @@
 			isa = PBXGroup;
 			children = (
 				FFBAA0CB22130C1200931F3E /* AppDelegate.swift */,
-				FFBAA0CD22130C1200931F3E /* ViewController.swift */,
+				FFBAA0E222130ECE00931F3E /* Resources */,
+				FFBAA0DF22130E6300931F3E /* Model */,
+				FFBAA0E122130EAA00931F3E /* Modules */,
+			);
+			path = VerintTask;
+			sourceTree = "<group>";
+		};
+		FFBAA0DD22130E4300931F3E /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		FFBAA0DE22130E5900931F3E /* StorageLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StorageLayer;
+			sourceTree = "<group>";
+		};
+		FFBAA0DF22130E6300931F3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0E322130EF200931F3E /* Views */,
+				FFBAA0E022130E7900931F3E /* NetworkLayer */,
+				FFBAA0DE22130E5900931F3E /* StorageLayer */,
+				FFBAA0DD22130E4300931F3E /* ServiceLayer */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFBAA0E022130E7900931F3E /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		FFBAA0E122130EAA00931F3E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0E422130F0400931F3E /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FFBAA0E222130ECE00931F3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FFBAA0CF22130C1200931F3E /* Main.storyboard */,
 				FFBAA0D222130C1300931F3E /* Assets.xcassets */,
 				FFBAA0D422130C1300931F3E /* LaunchScreen.storyboard */,
 				FFBAA0D722130C1300931F3E /* Info.plist */,
 			);
-			path = VerintTask;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFBAA0E322130EF200931F3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFBAA0E422130F0400931F3E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0CD22130C1200931F3E /* MainSearchViewController.swift */,
+				FFBAA0E522130F3800931F3E /* DetailViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBAA0CE22130C1200931F3E /* ViewController.swift in Sources */,
+				FFBAA0E622130F3800931F3E /* DetailViewController.swift in Sources */,
+				FFBAA0CE22130C1200931F3E /* MainSearchViewController.swift in Sources */,
 				FFBAA0CC22130C1200931F3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
