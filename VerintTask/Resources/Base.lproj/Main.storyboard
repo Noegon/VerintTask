@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="1824.8" y="105.69715142428787"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="yLc-s7-bGS">
             <objects>
                 <viewController id="NgP-f8-0mA" customClass="DetailViewController" customModule="VerintTask" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,15 +166,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wsq-Sb-17m"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="zPK-Ll-ZgJ"/>
                     <connections>
                         <outlet property="detailImageView" destination="pG9-51-HEE" id="bGD-ml-azi"/>
                         <outlet property="domainLabel" destination="8hj-kC-FTg" id="SaY-ap-bwQ"/>
                         <outlet property="favouriteSwitch" destination="rka-Vz-1ip" id="yhO-ez-k06"/>
                         <outlet property="locationLabel" destination="LhT-Qn-BVv" id="Eif-Xw-k1V"/>
                         <outlet property="universityNameLabel" destination="rzj-EC-xLJ" id="tBv-9V-vEr"/>
+                        <segue destination="Rbl-fW-R1H" kind="unwind" identifier="unwindSegueToMainSearchViewController" unwindAction="unwindToMainSearchViewControllerWithUnwindSegue:" id="cJs-Vt-YHR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KyE-IL-F1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Rbl-fW-R1H" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2682" y="106"/>
         </scene>

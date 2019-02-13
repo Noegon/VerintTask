@@ -50,23 +50,38 @@ private extension UniversitySearchService {
     }
 }
 
-class UniversitySearchService {
+protocol UniversitySearchServiceProtocol {
+    func searchUniversities(byPartialName name: String,
+                            onSuccess: @escaping (_ result: [University]) -> (),
+                            onFailure: @escaping (_ error: Error) -> ())
     
-    let universityObtainingService: BaseBackendService
-    let logoObtainingService: BaseBackendService
+    func obtainLogo(byUniversityDomain domain: String,
+                    onSuccess: @escaping (_ result: UIImage) -> (),
+                    onFailure: @escaping (_ error: Error) -> ())
+    
+    func cancelUniversitySearchRequest()
+    
+    func cancelLogoObtainRequest()
+}
+
+class UniversitySearchService: UniversitySearchServiceProtocol {
+    
+    var universityObtainingService: BaseBackendService
+    var logoObtainingService: BaseBackendService
+    
+    let universityBaseURL: URL = URL(string: Const.universityBaseURL)!
+    let logoBaseURL: URL = URL(string: Const.logoBaseURL)!
     
     init() {
-        let universityBaseURL: URL = URL(string: Const.universityBaseURL)!
-        
-        let logoBaseURL: URL = URL(string: Const.logoBaseURL)!
-
-        self.universityObtainingService = BaseBackendService(universityBaseURL)
-        self.logoObtainingService = BaseBackendService(logoBaseURL)
+        universityObtainingService = BaseBackendService(universityBaseURL)
+        logoObtainingService = BaseBackendService(logoBaseURL)
     }
     
-    func searchUniversities(byParticialName name: String,
-                            onSuccess: @escaping (_ result: [UniversitySearchResponse]) -> (),
+    func searchUniversities(byPartialName name: String,
+                            onSuccess: @escaping (_ result: [University]) -> (),
                             onFailure: @escaping (_ error: Error) -> ()) {
+        
+        universityObtainingService = BaseBackendService(universityBaseURL)
         
         universityObtainingService.performRequest(UniversitySearchRequest.init(universityName: name), success: { (data) in
             guard let _data = data else {
@@ -78,8 +93,16 @@ class UniversitySearchService {
             
             let list: [UniversitySearchResponse] = (try? JSONDecoder().decode([UniversitySearchResponse].self, from: _data)) ?? []
             
+            let universities = list.map({ (response) -> University in
+                return University.init(webPages: response.webPages,
+                                       alphaTwoCode: response.alphaTwoCode,
+                                       country: response.country,
+                                       domains: response.domains,
+                                       name: response.name)
+            })
+            
             DispatchQueue.main.async {
-                onSuccess(list)
+                onSuccess(universities)
             }
         }) { (error) in
             DispatchQueue.main.async {
@@ -88,11 +111,13 @@ class UniversitySearchService {
         }
     }
     
-    func obtainLogo(byUnivercityDomain domain: String,
+    func obtainLogo(byUniversityDomain domain: String,
                     onSuccess: @escaping (_ result: UIImage) -> (),
                     onFailure: @escaping (_ error: Error) -> ()) {
         
-        universityObtainingService.performRequest(UniversityLogoRequest.init(universityDomain: domain), success: { (data) in
+        logoObtainingService = BaseBackendService(logoBaseURL)
+        
+        logoObtainingService.performRequest(UniversityLogoRequest.init(universityDomain: domain), success: { (data) in
             guard let _data = data else {
                 DispatchQueue.main.async {
                     onFailure(UniversitySearchServiceError.unparsibleData(underlyingError: nil, serverData: data ?? Data()))
@@ -115,5 +140,13 @@ class UniversitySearchService {
                 onFailure(error)
             }
         }
+    }
+    
+    func cancelUniversitySearchRequest() {
+        universityObtainingService.cancel()
+    }
+    
+    func cancelLogoObtainRequest() {
+        logoObtainingService.cancel()
     }
 }

@@ -33,6 +33,9 @@
 		FFBAA122221443B800931F3E /* UniversityLogoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA121221443B800931F3E /* UniversityLogoRequest.swift */; };
 		FFBAA124221444B100931F3E /* UniversitySearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */; };
 		FFBAA128221455AD00931F3E /* UniversitySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA127221455AD00931F3E /* UniversitySearchService.swift */; };
+		FFBAA12B2214651200931F3E /* Collection+CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA12A2214651200931F3E /* Collection+CollectionExtensions.swift */; };
+		FFBAA12E2214968900931F3E /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA12D2214968900931F3E /* University.swift */; };
+		FFBAA1302214A25700931F3E /* UniversitySearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA12F2214A25700931F3E /* UniversitySearchProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		FFBAA121221443B800931F3E /* UniversityLogoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityLogoRequest.swift; sourceTree = "<group>"; };
 		FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchResponse.swift; sourceTree = "<group>"; };
 		FFBAA127221455AD00931F3E /* UniversitySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchService.swift; sourceTree = "<group>"; };
+		FFBAA12A2214651200931F3E /* Collection+CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+CollectionExtensions.swift"; sourceTree = "<group>"; };
+		FFBAA12D2214968900931F3E /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		FFBAA12F2214A25700931F3E /* UniversitySearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		FFBAA0DE22130E5900931F3E /* StorageLayer */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAA12F2214A25700931F3E /* UniversitySearchProvider.swift */,
 			);
 			path = StorageLayer;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBAA0EF22133A6100931F3E /* Constants */,
+				FFBAA103221364B200931F3E /* Extensions */,
 				FFBAA0E322130EF200931F3E /* Views */,
 				FFBAA0EE2213349A00931F3E /* Model */,
 			);
@@ -152,7 +160,6 @@
 		FFBAA0E322130EF200931F3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFBAA103221364B200931F3E /* Extensions */,
 				FFBAA0E72213118100931F3E /* TableCells */,
 			);
 			path = Views;
@@ -229,12 +236,13 @@
 				FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */,
 			);
 			name = NibInstantiatable;
-			path = VerintTask/Common/Views/Extensions/UIView/NibInstantiatable;
+			path = VerintTask/Common/Extensions/UIView/NibInstantiatable;
 			sourceTree = SOURCE_ROOT;
 		};
 		FFBAA103221364B200931F3E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAA1292214641400931F3E /* Collection */,
 				FFBAA1042213656100931F3E /* UIView */,
 			);
 			path = Extensions;
@@ -297,6 +305,7 @@
 		FFBAA11C221441CB00931F3E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAA12C2214963C00931F3E /* BuisnessLogicModels */,
 				FFBAA11E221441E100931F3E /* Response */,
 				FFBAA11D221441DA00931F3E /* Request */,
 			);
@@ -318,6 +327,22 @@
 				FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		FFBAA1292214641400931F3E /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA12A2214651200931F3E /* Collection+CollectionExtensions.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		FFBAA12C2214963C00931F3E /* BuisnessLogicModels */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA12D2214968900931F3E /* University.swift */,
+			);
+			path = BuisnessLogicModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,9 +424,11 @@
 				FFBAA122221443B800931F3E /* UniversityLogoRequest.swift in Sources */,
 				FFBAA102221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */,
 				FFBAA0EC221311E600931F3E /* MainSearchControllerCell.swift in Sources */,
+				FFBAA12E2214968900931F3E /* University.swift in Sources */,
 				FFBAA0F422133D9300931F3E /* Images.swift in Sources */,
 				FFBAA0FD22133F9F00931F3E /* Strings.swift in Sources */,
 				FFBAA101221340C500931F3E /* UIVIew+NibInstantiatable.swift in Sources */,
+				FFBAA1302214A25700931F3E /* UniversitySearchProvider.swift in Sources */,
 				FFBAA0E622130F3800931F3E /* DetailViewController.swift in Sources */,
 				FFBAA0F322133D9300931F3E /* Segues.swift in Sources */,
 				FFBAA11422143F8B00931F3E /* BackendAPIRequest.swift in Sources */,
@@ -410,6 +437,7 @@
 				FFBAA0CC22130C1200931F3E /* AppDelegate.swift in Sources */,
 				FFBAA10B22143DE700931F3E /* URLSessionPinningDelegate.swift in Sources */,
 				FFBAA1062213657A00931F3E /* UIView+Constraints.swift in Sources */,
+				FFBAA12B2214651200931F3E /* Collection+CollectionExtensions.swift in Sources */,
 				FFBAA11722143F8B00931F3E /* BaseBackendService.swift in Sources */,
 				FFBAA10A22143DE700931F3E /* NetworkService.swift in Sources */,
 				FFBAA0F522133D9300931F3E /* Storyboards.swift in Sources */,

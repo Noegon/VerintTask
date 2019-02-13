@@ -10,7 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    // var model...
+    var image: UIImage?
+    var university: University?
     
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var universityNameLabel: UILabel!
@@ -20,6 +21,20 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detailImageView.image = image
+        if detailImageView.image == nil {
+            detailImageView.image = university?.logotype != nil ? UIImage(data: (university?.logotype)!) : Asset.emptyUniversity.image
+        }
+        
+        universityNameLabel.text = university?.name
+        domainLabel.text = university?.domains[safe: 0]
+        locationLabel.text = university?.country
+        favouriteSwitch.isOn = university?.isFavourite ?? false
+        
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "❮ Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(back(sender:)))
+        self.navigationItem.leftBarButtonItem = newBackButton
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,12 +42,16 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func favouriteValueChanged(_ sender: UISwitch) {
-        let isFavourite = sender.isOn
-        // TODO: Add logic here
+        university?.isFavourite = sender.isOn
     }
     
     @IBAction func visitSiteButtontapped(_ sender: Any) {
-        // TODO: Handle gesture - link to "safari"
+        guard let url = URL(string: university?.webPages[safe: 0] ?? "") else { return }
+        UIApplication.shared.open(url)
+    }
+    
+    @objc func back(sender: UIBarButtonItem) {
+        perform(segue: StoryboardSegue.Main.unwindSegueToMainSearchViewController, sender: sender)
     }
 }
 

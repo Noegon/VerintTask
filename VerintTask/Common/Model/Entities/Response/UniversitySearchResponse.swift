@@ -8,13 +8,15 @@
 
 import Foundation
 
+// Here there is one assumption here: network model should not be equal to client entities model
+// Additional separate 'University' model should be created in 'Main' module.
 internal struct UniversitySearchResponse: ResponseParsedItem {
     
-    let webPages: [String]
-    let alphaTwoCode: String
-    let country: String
-    let domains: [String]
-    let name: String
+    var webPages: [String]
+    var alphaTwoCode: String
+    var country: String
+    var domains: [String]
+    var name: String
     
     init(webPages: [String], alphaTwoCode: String, country: String, domains: [String], name: String) { // default struct initializer
         self.webPages = webPages

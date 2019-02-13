@@ -14,6 +14,7 @@ import UIKit
 internal enum StoryboardSegue {
   internal enum Main: String, SegueType {
     case showUniversityDetail = "ShowUniversityDetail"
+    case unwindSegueToMainSearchViewController
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

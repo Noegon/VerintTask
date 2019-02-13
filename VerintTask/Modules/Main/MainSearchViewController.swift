@@ -11,9 +11,11 @@ import UIKit
 // Better not to use MVC but this project is too small and there is too less time to provide something more complex like MVP or VIP
 class MainSearchViewController: UIViewController {
 
-    private let universitySearchService: UniversitySearchService = UniversitySearchService() // Should be in interactor or presenter
+    private var universitySearchProvider: UniversitySearchProvider! // Should be in interactor or presenter
     
     private var searchController: UISearchController?
+    
+    private var universities: [University] = []
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,6 +27,12 @@ class MainSearchViewController: UIViewController {
         
         return refreshControl
     }()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        universitySearchProvider = UniversitySearchProvider(withUniversityService: UniversitySearchService())
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +69,29 @@ class MainSearchViewController: UIViewController {
 
 extension MainSearchViewController {
     
+    // Better to use some kind of coordinator or App router for coordination between modules
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // TODO: set model or model id here
+        if segue.identifier == StoryboardSegue.Main.showUniversityDetail.rawValue {
+            let destController = segue.destination as! DetailViewController
+            let tableViewCell = sender as! MainSearchControllerCell
+            
+            guard let index = tableView.indexPath(for: tableViewCell)?.row else {
+                return
+            }
+            
+            destController.university = universities[index]
+            destController.image = tableViewCell.detailImageView.image
+        }
+    }
+    
+    @IBAction func unwindToMainSearchViewController(unwindSegue: UIStoryboardSegue) {
+        let sourceViewcontroller = unwindSegue.source as! DetailViewController
+        
+        guard let university = sourceViewcontroller.university else {
+            return
+        }
+        
+        universitySearchProvider.updateUniversities(withUniversity: university)
     }
 }
 
@@ -75,7 +104,7 @@ extension MainSearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 // TODO: Stub
+        return universities.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -87,13 +116,45 @@ extension MainSearchViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.configureCell(withTitle: "Harvard", subtitle: "Cool place. But boring.\nVery boooooooooooring.\nI don't want to go to school! I just want to break the rule!", image: Asset.emptyUniversity.image)
+        // Cell tuning with data from model better should be in presenter
+        let row = indexPath.row
+        let university = universities[row]
+        let description = "country: \(university.country)\nweb page: \(university.webPages[safe: 0] ?? "no website")"
+        let domain = university.domains[safe: 0] ?? ""
+        
+        cell.configureCell(withTitle: university.name, subtitle: description, image: Asset.emptyUniversity.image, isFavourite: university.isFavourite)
+        
+        // Allows to avoid unnecessary network operation
+        guard university.logotype == nil else {
+            cell.detailImageView.image = UIImage(data: university.logotype!)
+            return cell
+        }
+        
+        // It would be better to obtain and cache logos somwhere in DB to provide quick access without necessity to call network request
+        cell.activityIndicatorView.startAnimating()
+        universitySearchProvider.obtainLogo(byUniversityDomain: domain,
+                                           onSuccess:
+            { (image) in
+                if row == indexPath.row {
+                    // set logo image into cell
+                    cell.detailImageView.image = image
+                }
+                
+                cell.activityIndicatorView.stopAnimating()
+            },
+                                           onFailure:
+            { (error) in
+                cell.imageView?.image = Asset.emptyUniversity.image
+                
+                cell.activityIndicatorView.stopAnimating()
+            })
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        perform(segue: StoryboardSegue.Main.showUniversityDetail)
+        let tableViewCell = tableView.cellForRow(at: indexPath)
+        perform(segue: StoryboardSegue.Main.showUniversityDetail, sender: tableViewCell)
     }
 }
 
@@ -102,17 +163,59 @@ extension MainSearchViewController: UITableViewDelegate, UITableViewDataSource {
 extension MainSearchViewController: UISearchResultsUpdating, UISearchBarDelegate {
     
     func updateSearchResults(for searchController: UISearchController) {
-        // TODO: Cache obtained data here
-        tableView.reloadData()
+        let text = searchController.searchBar.text ?? ""
+        
+        renewData(withPartialName: text)
     }
 }
 
 // MARK: - Action methods
 extension MainSearchViewController {
-    @objc open func refresh(_ sender: UIRefreshControl?) {
+    @objc func refresh(_ sender: UIRefreshControl?) {
         DispatchQueue.main.async { [weak self] in
-            self?.tableView.reloadData() // Stub - update model here
-            self?.refreshControl.endRefreshing()
+            
+            let name = self?.searchController?.searchBar.text ?? ""
+            
+            self?.renewData(withPartialName: name)
         }
+    }
+}
+
+// MARK: - Configurators - better make outer configurator, implementing builder pattern
+extension MainSearchViewController {
+    
+    // For UITesting
+    func configure(withSearchService service: UniversitySearchServiceProtocol) {
+        universitySearchProvider = UniversitySearchProvider(withUniversityService: service)
+    }
+    
+    func configure(withSearchProvider provider: UniversitySearchProvider) {
+        universitySearchProvider = provider
+    }
+}
+
+// MARK: - helper methods
+fileprivate extension MainSearchViewController {
+    func renewData(withPartialName name: String) {
+        
+        guard !name.isEmpty else {
+            universities = []
+            tableView.reloadData()
+            return
+        }
+            
+        // This logic also should be somewhere in interactor or presenter
+        universitySearchProvider.searchUniversities(byParticialName: name,
+                                                   onSuccess:
+            { [weak self] (results) in
+                self?.universities = results
+                self?.tableView.reloadData()
+                self?.refreshControl.endRefreshing()
+            },
+                                                   onFailure:
+            { [weak self] (error) in
+                print(error)
+                self?.refreshControl.endRefreshing()
+            })
     }
 }

@@ -13,6 +13,7 @@ class MainSearchControllerCell: UITableViewCell, NibInstantiatable {
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet private weak var favouriteIcon: UIImageView!
     
     private var isFavourite: Bool = false {
@@ -40,6 +41,7 @@ class MainSearchControllerCell: UITableViewCell, NibInstantiatable {
         subtitleLabel.text = subtitle ?? ""
         detailImageView.image = image ?? UIImage()
         self.isFavourite = isFavourite
+        self.activityIndicatorView.hidesWhenStopped = true
         // UIViews could be tuned here with some basic appearance structure for example
     }
 }
