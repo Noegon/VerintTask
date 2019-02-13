@@ -22,6 +22,7 @@
 		FFBAA0FD22133F9F00931F3E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0FC22133F9F00931F3E /* Strings.swift */; };
 		FFBAA101221340C500931F3E /* UIVIew+NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */; };
 		FFBAA102221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */; };
+		FFBAA1062213657A00931F3E /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1052213657A00931F3E /* UIView+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FFBAA0FC22133F9F00931F3E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+NibInstantiatable.swift"; sourceTree = "<group>"; };
 		FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiatable.swift"; sourceTree = "<group>"; };
+		FFBAA1052213657A00931F3E /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +131,7 @@
 		FFBAA0E322130EF200931F3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFBAA0FE221340C500931F3E /* NibInstantiatable */,
+				FFBAA103221364B200931F3E /* Extensions */,
 				FFBAA0E72213118100931F3E /* TableCells */,
 			);
 			path = Views;
@@ -204,8 +206,25 @@
 				FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */,
 			);
 			name = NibInstantiatable;
-			path = VerintTask/Common/NibInstantiatable;
+			path = VerintTask/Common/Views/Extensions/UIView/NibInstantiatable;
 			sourceTree = SOURCE_ROOT;
+		};
+		FFBAA103221364B200931F3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA1042213656100931F3E /* UIView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFBAA1042213656100931F3E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FE221340C500931F3E /* NibInstantiatable */,
+				FFBAA1052213657A00931F3E /* UIView+Constraints.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -289,6 +308,7 @@
 				FFBAA0F322133D9300931F3E /* Segues.swift in Sources */,
 				FFBAA0CE22130C1200931F3E /* MainSearchViewController.swift in Sources */,
 				FFBAA0CC22130C1200931F3E /* AppDelegate.swift in Sources */,
+				FFBAA1062213657A00931F3E /* UIView+Constraints.swift in Sources */,
 				FFBAA0F522133D9300931F3E /* Storyboards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

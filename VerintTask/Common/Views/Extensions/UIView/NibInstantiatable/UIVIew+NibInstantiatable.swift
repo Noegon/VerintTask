@@ -1,4 +1,10 @@
-///  Copyright © 2018 Intervale JSC. All rights reserved.
+//
+//  NibInstantiatable.swift
+//  VerintTask
+//
+//  Created by astafeev on 2/12/19.
+//  Copyright © 2019 astafeev. All rights reserved.
+//
 
 import Foundation
 import UIKit

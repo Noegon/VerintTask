@@ -10,23 +10,34 @@ import UIKit
 
 class MainSearchViewController: UIViewController {
 
-    private var searchBar: UISearchBar?
+//    private var searchBar: UISearchBar?
     private var searchController: UISearchController?
     
     @IBOutlet weak var tableView: UITableView!
     
+    lazy var refreshControl: UIRefreshControl = {
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        refreshControl.tintColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = L10n.mainControllerNavigationBarTitle
+        
         // table view setup
-        tableView.delegate = self as? UITableViewDelegate
-        tableView.dataSource = self as? UITableViewDataSource
+        tableView.delegate = self as UITableViewDelegate
+        tableView.dataSource = self as UITableViewDataSource
         tableView.estimatedRowHeight = 3000 // Some big number for automatic cell height tuning
         
         // search bar setup
-        searchController = UISearchController()
-        searchController?.searchResultsUpdater = self as? UISearchResultsUpdating
-        searchController?.searchBar.delegate = self as? UISearchBarDelegate
+        searchController = UISearchController(searchResultsController: nil)
+        searchController?.searchResultsUpdater = self as UISearchResultsUpdating
+        searchController?.searchBar.delegate = self as UISearchBarDelegate
         
         searchController?.dimsBackgroundDuringPresentation = false
         searchController?.searchBar.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -35,9 +46,21 @@ class MainSearchViewController: UIViewController {
         definesPresentationContext = true
         
         searchController?.searchBar.sizeToFit()
+        searchController?.searchBar.placeholder = L10n.mainControllerSearchBarPlaceholder
         
         tableView.register(UINib(nibName: MainSearchControllerCell.xibName, bundle: nil),
                            forCellReuseIdentifier: MainSearchControllerCell.xibName)
+        
+        tableView.addSubview(refreshControl)
+    }
+}
+
+// MARK: - Navigation
+
+extension MainSearchViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // TODO: set model or model id here
     }
 }
 
@@ -66,6 +89,10 @@ extension MainSearchViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        perform(segue: StoryboardSegue.Main.showUniversityDetail)
+    }
 }
 
 // MARK: - Search delegate methods
@@ -73,6 +100,17 @@ extension MainSearchViewController: UITableViewDelegate, UITableViewDataSource {
 extension MainSearchViewController: UISearchResultsUpdating, UISearchBarDelegate {
     
     func updateSearchResults(for searchController: UISearchController) {
-        
+        // TODO: Cache obtained data here
+        tableView.reloadData()
+    }
+}
+
+// MARK: - Action methods
+extension MainSearchViewController {
+    @objc open func refresh(_ sender: UIRefreshControl?) {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData() // Stub - update model here
+            self?.refreshControl.endRefreshing()
+        }
     }
 }

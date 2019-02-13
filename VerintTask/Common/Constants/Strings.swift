@@ -10,8 +10,10 @@ import Foundation
 
 // swiftlint:disable function_parameter_count identifier_name line_length type_body_length
 internal enum L10n {
+  /// University search
+  internal static let mainControllerNavigationBarTitle = L10n.tr("Localizable", "mainController.navigationBar.title")
   /// Insert university name here
-  internal static let searchBarPlaceholder = L10n.tr("Localizable", "searchBar.placeholder")
+  internal static let mainControllerSearchBarPlaceholder = L10n.tr("Localizable", "mainController.searchBar.placeholder")
   /// University description
   internal static let searchResultCellSubtitleEmpty = L10n.tr("Localizable", "searchResultCell.subtitle.empty")
   /// University name

@@ -8,6 +8,7 @@
 
 // Main screen
 
-"searchBar.placeholder" = "Insert university name here";
+"mainController.navigationBar.title" = "University search";
+"mainController.searchBar.placeholder" = "Insert university name here";
 "searchResultCell.title.empty" = "University name";
 "searchResultCell.subtitle.empty" = "University description";

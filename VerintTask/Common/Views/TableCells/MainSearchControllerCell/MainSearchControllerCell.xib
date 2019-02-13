@@ -58,9 +58,18 @@
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1d-w7-9nL">
                                                 <rect key="frame" x="279.5" y="0.0" width="44.5" height="44.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="XFY-C3-Aol">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="44.5"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="XFY-C3-Aol" firstAttribute="leading" secondItem="F1d-w7-9nL" secondAttribute="leading" id="Fef-ei-M3q"/>
+                                                    <constraint firstItem="XFY-C3-Aol" firstAttribute="top" secondItem="F1d-w7-9nL" secondAttribute="top" id="IUO-dV-Umj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XFY-C3-Aol" secondAttribute="bottom" id="KiU-u3-Z8R"/>
                                                     <constraint firstAttribute="width" secondItem="F1d-w7-9nL" secondAttribute="height" id="VEF-30-qOG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XFY-C3-Aol" secondAttribute="trailing" id="s1e-5u-ulD"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -118,6 +127,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="detailImageView" destination="0nT-TN-t8M" id="aL3-yb-qNF"/>
+                <outlet property="favouriteIcon" destination="XFY-C3-Aol" id="OiG-pL-9fp"/>
                 <outlet property="subtitleLabel" destination="kCY-q7-upp" id="8Az-mb-9tD"/>
                 <outlet property="titleLabel" destination="um1-Zd-e3j" id="Ski-pW-1PT"/>
             </connections>
@@ -126,5 +136,6 @@
     </objects>
     <resources>
         <image name="arrow-right" width="7" height="12"/>
+        <image name="star" width="24" height="24"/>
     </resources>
 </document>
