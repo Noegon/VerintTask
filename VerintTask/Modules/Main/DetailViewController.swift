@@ -9,6 +9,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
     var image: UIImage?
     var university: University?
     

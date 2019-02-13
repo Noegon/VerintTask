@@ -13,28 +13,29 @@
 		FFBAA0D322130C1300931F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0D222130C1300931F3E /* Assets.xcassets */; };
 		FFBAA0D622130C1300931F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0D422130C1300931F3E /* LaunchScreen.storyboard */; };
 		FFBAA0E622130F3800931F3E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0E522130F3800931F3E /* DetailViewController.swift */; };
-		FFBAA15E2214D79900931F3E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1342214D79900931F3E /* Strings.swift */; };
-		FFBAA15F2214D79900931F3E /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1352214D79900931F3E /* Segues.swift */; };
-		FFBAA1602214D79900931F3E /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1362214D79900931F3E /* Storyboards.swift */; };
-		FFBAA1612214D79900931F3E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1372214D79900931F3E /* Images.swift */; };
-		FFBAA1622214D79900931F3E /* Collection+CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA13A2214D79900931F3E /* Collection+CollectionExtensions.swift */; };
-		FFBAA1632214D79900931F3E /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA13C2214D79900931F3E /* UIView+Constraints.swift */; };
-		FFBAA1642214D79900931F3E /* UIVIew+NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA13E2214D79900931F3E /* UIVIew+NibInstantiatable.swift */; };
-		FFBAA1652214D79900931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA13F2214D79900931F3E /* UIViewController+StoryboardInstantiatable.swift */; };
-		FFBAA1662214D79900931F3E /* UniversitySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1422214D79900931F3E /* UniversitySearchService.swift */; };
-		FFBAA1672214D79900931F3E /* UniversitySearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1442214D79900931F3E /* UniversitySearchProvider.swift */; };
-		FFBAA1682214D79900931F3E /* ResponseParsedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1482214D79900931F3E /* ResponseParsedItem.swift */; };
-		FFBAA1692214D79900931F3E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA14A2214D79900931F3E /* NetworkService.swift */; };
-		FFBAA16A2214D79900931F3E /* URLSessionPinningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA14B2214D79900931F3E /* URLSessionPinningDelegate.swift */; };
-		FFBAA16B2214D79900931F3E /* BackendAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA14D2214D79900931F3E /* BackendAPIRequest.swift */; };
-		FFBAA16C2214D79900931F3E /* BaseBackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA14E2214D79900931F3E /* BaseBackendService.swift */; };
-		FFBAA16D2214D79900931F3E /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1502214D79900931F3E /* CoreError.swift */; };
-		FFBAA16E2214D79900931F3E /* UniversitySearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1532214D79900931F3E /* UniversitySearchResponse.swift */; };
-		FFBAA16F2214D79900931F3E /* UniversityLogoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1552214D79900931F3E /* UniversityLogoRequest.swift */; };
-		FFBAA1702214D79900931F3E /* UniversitySearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1562214D79900931F3E /* UniversitySearchRequest.swift */; };
-		FFBAA1712214D79900931F3E /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1582214D79900931F3E /* University.swift */; };
-		FFBAA1722214D79900931F3E /* MainSearchControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA15C2214D79900931F3E /* MainSearchControllerCell.xib */; };
-		FFBAA1732214D79900931F3E /* MainSearchControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA15D2214D79900931F3E /* MainSearchControllerCell.swift */; };
+		FFBAA0EA221311B100931F3E /* MainSearchControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0E9221311B100931F3E /* MainSearchControllerCell.xib */; };
+		FFBAA0EC221311E600931F3E /* MainSearchControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0EB221311E600931F3E /* MainSearchControllerCell.swift */; };
+		FFBAA0F322133D9300931F3E /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0F022133D9200931F3E /* Segues.swift */; };
+		FFBAA0F422133D9300931F3E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0F122133D9200931F3E /* Images.swift */; };
+		FFBAA0F522133D9300931F3E /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0F222133D9300931F3E /* Storyboards.swift */; };
+		FFBAA0F922133E3900931F3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA0FB22133E3900931F3E /* Localizable.strings */; };
+		FFBAA0FD22133F9F00931F3E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0FC22133F9F00931F3E /* Strings.swift */; };
+		FFBAA101221340C500931F3E /* UIVIew+NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */; };
+		FFBAA102221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */; };
+		FFBAA1062213657A00931F3E /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1052213657A00931F3E /* UIView+Constraints.swift */; };
+		FFBAA10A22143DE700931F3E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA10822143DE700931F3E /* NetworkService.swift */; };
+		FFBAA10B22143DE700931F3E /* URLSessionPinningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA10922143DE700931F3E /* URLSessionPinningDelegate.swift */; };
+		FFBAA10E22143E1C00931F3E /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA10D22143E1C00931F3E /* CoreError.swift */; };
+		FFBAA11422143F8B00931F3E /* BackendAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA11022143F8B00931F3E /* BackendAPIRequest.swift */; };
+		FFBAA11722143F8B00931F3E /* BaseBackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA11322143F8B00931F3E /* BaseBackendService.swift */; };
+		FFBAA11B221441B900931F3E /* ResponseParsedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA11A221441B900931F3E /* ResponseParsedItem.swift */; };
+		FFBAA1202214420700931F3E /* UniversitySearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA11F2214420700931F3E /* UniversitySearchRequest.swift */; };
+		FFBAA122221443B800931F3E /* UniversityLogoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA121221443B800931F3E /* UniversityLogoRequest.swift */; };
+		FFBAA124221444B100931F3E /* UniversitySearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */; };
+		FFBAA128221455AD00931F3E /* UniversitySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA127221455AD00931F3E /* UniversitySearchService.swift */; };
+		FFBAA12B2214651200931F3E /* Collection+CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA12A2214651200931F3E /* Collection+CollectionExtensions.swift */; };
+		FFBAA12E2214968900931F3E /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA12D2214968900931F3E /* University.swift */; };
+		FFBAA1302214A25700931F3E /* UniversitySearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA12F2214A25700931F3E /* UniversitySearchProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,28 +47,29 @@
 		FFBAA0D522130C1300931F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFBAA0D722130C1300931F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFBAA0E522130F3800931F3E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FFBAA1342214D79900931F3E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		FFBAA1352214D79900931F3E /* Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
-		FFBAA1362214D79900931F3E /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
-		FFBAA1372214D79900931F3E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		FFBAA13A2214D79900931F3E /* Collection+CollectionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+CollectionExtensions.swift"; sourceTree = "<group>"; };
-		FFBAA13C2214D79900931F3E /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
-		FFBAA13E2214D79900931F3E /* UIVIew+NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+NibInstantiatable.swift"; sourceTree = "<group>"; };
-		FFBAA13F2214D79900931F3E /* UIViewController+StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiatable.swift"; sourceTree = "<group>"; };
-		FFBAA1422214D79900931F3E /* UniversitySearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitySearchService.swift; sourceTree = "<group>"; };
-		FFBAA1442214D79900931F3E /* UniversitySearchProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitySearchProvider.swift; sourceTree = "<group>"; };
-		FFBAA1482214D79900931F3E /* ResponseParsedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseParsedItem.swift; sourceTree = "<group>"; };
-		FFBAA14A2214D79900931F3E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		FFBAA14B2214D79900931F3E /* URLSessionPinningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionPinningDelegate.swift; sourceTree = "<group>"; };
-		FFBAA14D2214D79900931F3E /* BackendAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendAPIRequest.swift; sourceTree = "<group>"; };
-		FFBAA14E2214D79900931F3E /* BaseBackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackendService.swift; sourceTree = "<group>"; };
-		FFBAA1502214D79900931F3E /* CoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreError.swift; sourceTree = "<group>"; };
-		FFBAA1532214D79900931F3E /* UniversitySearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitySearchResponse.swift; sourceTree = "<group>"; };
-		FFBAA1552214D79900931F3E /* UniversityLogoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityLogoRequest.swift; sourceTree = "<group>"; };
-		FFBAA1562214D79900931F3E /* UniversitySearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitySearchRequest.swift; sourceTree = "<group>"; };
-		FFBAA1582214D79900931F3E /* University.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
-		FFBAA15C2214D79900931F3E /* MainSearchControllerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainSearchControllerCell.xib; sourceTree = "<group>"; };
-		FFBAA15D2214D79900931F3E /* MainSearchControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSearchControllerCell.swift; sourceTree = "<group>"; };
+		FFBAA0E9221311B100931F3E /* MainSearchControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSearchControllerCell.xib; sourceTree = "<group>"; };
+		FFBAA0EB221311E600931F3E /* MainSearchControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchControllerCell.swift; sourceTree = "<group>"; };
+		FFBAA0F022133D9200931F3E /* Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		FFBAA0F122133D9200931F3E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		FFBAA0F222133D9300931F3E /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		FFBAA0FA22133E3900931F3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFBAA0FC22133F9F00931F3E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+NibInstantiatable.swift"; sourceTree = "<group>"; };
+		FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiatable.swift"; sourceTree = "<group>"; };
+		FFBAA1052213657A00931F3E /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		FFBAA10822143DE700931F3E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FFBAA10922143DE700931F3E /* URLSessionPinningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionPinningDelegate.swift; sourceTree = "<group>"; };
+		FFBAA10D22143E1C00931F3E /* CoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreError.swift; sourceTree = "<group>"; };
+		FFBAA11022143F8B00931F3E /* BackendAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendAPIRequest.swift; sourceTree = "<group>"; };
+		FFBAA11322143F8B00931F3E /* BaseBackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackendService.swift; sourceTree = "<group>"; };
+		FFBAA11A221441B900931F3E /* ResponseParsedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseParsedItem.swift; sourceTree = "<group>"; };
+		FFBAA11F2214420700931F3E /* UniversitySearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitySearchRequest.swift; sourceTree = "<group>"; };
+		FFBAA121221443B800931F3E /* UniversityLogoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityLogoRequest.swift; sourceTree = "<group>"; };
+		FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchResponse.swift; sourceTree = "<group>"; };
+		FFBAA127221455AD00931F3E /* UniversitySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchService.swift; sourceTree = "<group>"; };
+		FFBAA12A2214651200931F3E /* Collection+CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+CollectionExtensions.swift"; sourceTree = "<group>"; };
+		FFBAA12D2214968900931F3E /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		FFBAA12F2214A25700931F3E /* UniversitySearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +104,37 @@
 			children = (
 				FFBAA0CB22130C1200931F3E /* AppDelegate.swift */,
 				FFBAA0E222130ECE00931F3E /* Resources */,
-				FFBAA1322214D79900931F3E /* Common */,
+				FFBAA0DF22130E6300931F3E /* Common */,
 				FFBAA0E122130EAA00931F3E /* Modules */,
 			);
 			path = VerintTask;
+			sourceTree = "<group>";
+		};
+		FFBAA0DD22130E4300931F3E /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA127221455AD00931F3E /* UniversitySearchService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		FFBAA0DE22130E5900931F3E /* StorageLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA12F2214A25700931F3E /* UniversitySearchProvider.swift */,
+			);
+			path = StorageLayer;
+			sourceTree = "<group>";
+		};
+		FFBAA0DF22130E6300931F3E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0EF22133A6100931F3E /* Constants */,
+				FFBAA103221364B200931F3E /* Extensions */,
+				FFBAA0E322130EF200931F3E /* Views */,
+				FFBAA0EE2213349A00931F3E /* Model */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FFBAA0E122130EAA00931F3E /* Modules */ = {
@@ -119,12 +148,21 @@
 		FFBAA0E222130ECE00931F3E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAA0F822133E2600931F3E /* Localization */,
 				FFBAA0CF22130C1200931F3E /* Main.storyboard */,
 				FFBAA0D222130C1300931F3E /* Assets.xcassets */,
 				FFBAA0D422130C1300931F3E /* LaunchScreen.storyboard */,
 				FFBAA0D722130C1300931F3E /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFBAA0E322130EF200931F3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0E72213118100931F3E /* TableCells */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FFBAA0E422130F0400931F3E /* Main */ = {
@@ -136,201 +174,175 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		FFBAA1322214D79900931F3E /* Common */ = {
+		FFBAA0E72213118100931F3E /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
-				FFBAA1332214D79900931F3E /* Constants */,
-				FFBAA1382214D79900931F3E /* Extensions */,
-				FFBAA1402214D79900931F3E /* Model */,
-				FFBAA1592214D79900931F3E /* Views */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		FFBAA1332214D79900931F3E /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1342214D79900931F3E /* Strings.swift */,
-				FFBAA1352214D79900931F3E /* Segues.swift */,
-				FFBAA1362214D79900931F3E /* Storyboards.swift */,
-				FFBAA1372214D79900931F3E /* Images.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		FFBAA1382214D79900931F3E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1392214D79900931F3E /* Collection */,
-				FFBAA13B2214D79900931F3E /* UIView */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		FFBAA1392214D79900931F3E /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA13A2214D79900931F3E /* Collection+CollectionExtensions.swift */,
-			);
-			path = Collection;
-			sourceTree = "<group>";
-		};
-		FFBAA13B2214D79900931F3E /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA13C2214D79900931F3E /* UIView+Constraints.swift */,
-				FFBAA13D2214D79900931F3E /* NibInstantiatable */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		FFBAA13D2214D79900931F3E /* NibInstantiatable */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA13E2214D79900931F3E /* UIVIew+NibInstantiatable.swift */,
-				FFBAA13F2214D79900931F3E /* UIViewController+StoryboardInstantiatable.swift */,
-			);
-			path = NibInstantiatable;
-			sourceTree = "<group>";
-		};
-		FFBAA1402214D79900931F3E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1412214D79900931F3E /* ServiceLayer */,
-				FFBAA1432214D79900931F3E /* StorageLayer */,
-				FFBAA1452214D79900931F3E /* Client */,
-				FFBAA1512214D79900931F3E /* Entities */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FFBAA1412214D79900931F3E /* ServiceLayer */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1422214D79900931F3E /* UniversitySearchService.swift */,
-			);
-			path = ServiceLayer;
-			sourceTree = "<group>";
-		};
-		FFBAA1432214D79900931F3E /* StorageLayer */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1442214D79900931F3E /* UniversitySearchProvider.swift */,
-			);
-			path = StorageLayer;
-			sourceTree = "<group>";
-		};
-		FFBAA1452214D79900931F3E /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1462214D79900931F3E /* Core */,
-			);
-			path = Client;
-			sourceTree = "<group>";
-		};
-		FFBAA1462214D79900931F3E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1472214D79900931F3E /* Mapping */,
-				FFBAA1492214D79900931F3E /* Network */,
-				FFBAA14C2214D79900931F3E /* Backend */,
-				FFBAA14F2214D79900931F3E /* Errors */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		FFBAA1472214D79900931F3E /* Mapping */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1482214D79900931F3E /* ResponseParsedItem.swift */,
-			);
-			path = Mapping;
-			sourceTree = "<group>";
-		};
-		FFBAA1492214D79900931F3E /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA14A2214D79900931F3E /* NetworkService.swift */,
-				FFBAA14B2214D79900931F3E /* URLSessionPinningDelegate.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		FFBAA14C2214D79900931F3E /* Backend */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA14D2214D79900931F3E /* BackendAPIRequest.swift */,
-				FFBAA14E2214D79900931F3E /* BaseBackendService.swift */,
-			);
-			path = Backend;
-			sourceTree = "<group>";
-		};
-		FFBAA14F2214D79900931F3E /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1502214D79900931F3E /* CoreError.swift */,
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
-		FFBAA1512214D79900931F3E /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1522214D79900931F3E /* Response */,
-				FFBAA1542214D79900931F3E /* Request */,
-				FFBAA1572214D79900931F3E /* BuisnessLogicModels */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		FFBAA1522214D79900931F3E /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1532214D79900931F3E /* UniversitySearchResponse.swift */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		FFBAA1542214D79900931F3E /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1552214D79900931F3E /* UniversityLogoRequest.swift */,
-				FFBAA1562214D79900931F3E /* UniversitySearchRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		FFBAA1572214D79900931F3E /* BuisnessLogicModels */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA1582214D79900931F3E /* University.swift */,
-			);
-			path = BuisnessLogicModels;
-			sourceTree = "<group>";
-		};
-		FFBAA1592214D79900931F3E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA15A2214D79900931F3E /* TableCells */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FFBAA15A2214D79900931F3E /* TableCells */ = {
-			isa = PBXGroup;
-			children = (
-				FFBAA15B2214D79900931F3E /* MainSearchControllerCell */,
+				FFBAA0E82213118C00931F3E /* MainSearchControllerCell */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
 		};
-		FFBAA15B2214D79900931F3E /* MainSearchControllerCell */ = {
+		FFBAA0E82213118C00931F3E /* MainSearchControllerCell */ = {
 			isa = PBXGroup;
 			children = (
-				FFBAA15C2214D79900931F3E /* MainSearchControllerCell.xib */,
-				FFBAA15D2214D79900931F3E /* MainSearchControllerCell.swift */,
+				FFBAA0E9221311B100931F3E /* MainSearchControllerCell.xib */,
+				FFBAA0EB221311E600931F3E /* MainSearchControllerCell.swift */,
 			);
 			path = MainSearchControllerCell;
+			sourceTree = "<group>";
+		};
+		FFBAA0ED2213346400931F3E /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA118221440AC00931F3E /* Core */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		FFBAA0EE2213349A00931F3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA11C221441CB00931F3E /* Entities */,
+				FFBAA0ED2213346400931F3E /* Client */,
+				FFBAA0DE22130E5900931F3E /* StorageLayer */,
+				FFBAA0DD22130E4300931F3E /* ServiceLayer */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFBAA0EF22133A6100931F3E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FC22133F9F00931F3E /* Strings.swift */,
+				FFBAA0F122133D9200931F3E /* Images.swift */,
+				FFBAA0F022133D9200931F3E /* Segues.swift */,
+				FFBAA0F222133D9300931F3E /* Storyboards.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FFBAA0F822133E2600931F3E /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FB22133E3900931F3E /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FFBAA0FE221340C500931F3E /* NibInstantiatable */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */,
+				FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */,
+			);
+			name = NibInstantiatable;
+			path = VerintTask/Common/Extensions/UIView/NibInstantiatable;
+			sourceTree = SOURCE_ROOT;
+		};
+		FFBAA103221364B200931F3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA1292214641400931F3E /* Collection */,
+				FFBAA1042213656100931F3E /* UIView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFBAA1042213656100931F3E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA0FE221340C500931F3E /* NibInstantiatable */,
+				FFBAA1052213657A00931F3E /* UIView+Constraints.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FFBAA10722143DE700931F3E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA10822143DE700931F3E /* NetworkService.swift */,
+				FFBAA10922143DE700931F3E /* URLSessionPinningDelegate.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FFBAA10C22143E1C00931F3E /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA10D22143E1C00931F3E /* CoreError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		FFBAA10F22143F8B00931F3E /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA11022143F8B00931F3E /* BackendAPIRequest.swift */,
+				FFBAA11322143F8B00931F3E /* BaseBackendService.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		FFBAA118221440AC00931F3E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA119221441B800931F3E /* Mapping */,
+				FFBAA10F22143F8B00931F3E /* Backend */,
+				FFBAA10C22143E1C00931F3E /* Errors */,
+				FFBAA10722143DE700931F3E /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FFBAA119221441B800931F3E /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA11A221441B900931F3E /* ResponseParsedItem.swift */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		FFBAA11C221441CB00931F3E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA12C2214963C00931F3E /* BuisnessLogicModels */,
+				FFBAA11E221441E100931F3E /* Response */,
+				FFBAA11D221441DA00931F3E /* Request */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FFBAA11D221441DA00931F3E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA11F2214420700931F3E /* UniversitySearchRequest.swift */,
+				FFBAA121221443B800931F3E /* UniversityLogoRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		FFBAA11E221441E100931F3E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		FFBAA1292214641400931F3E /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA12A2214651200931F3E /* Collection+CollectionExtensions.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		FFBAA12C2214963C00931F3E /* BuisnessLogicModels */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA12D2214968900931F3E /* University.swift */,
+			);
+			path = BuisnessLogicModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +403,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBAA1722214D79900931F3E /* MainSearchControllerCell.xib in Resources */,
+				FFBAA0F922133E3900931F3E /* Localizable.strings in Resources */,
+				FFBAA0EA221311B100931F3E /* MainSearchControllerCell.xib in Resources */,
 				FFBAA0D622130C1300931F3E /* LaunchScreen.storyboard in Resources */,
 				FFBAA0D322130C1300931F3E /* Assets.xcassets in Resources */,
 				FFBAA0D122130C1200931F3E /* Main.storyboard in Resources */,
@@ -405,30 +418,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBAA1732214D79900931F3E /* MainSearchControllerCell.swift in Sources */,
-				FFBAA1612214D79900931F3E /* Images.swift in Sources */,
-				FFBAA1672214D79900931F3E /* UniversitySearchProvider.swift in Sources */,
-				FFBAA1602214D79900931F3E /* Storyboards.swift in Sources */,
+				FFBAA1202214420700931F3E /* UniversitySearchRequest.swift in Sources */,
+				FFBAA128221455AD00931F3E /* UniversitySearchService.swift in Sources */,
+				FFBAA11B221441B900931F3E /* ResponseParsedItem.swift in Sources */,
+				FFBAA122221443B800931F3E /* UniversityLogoRequest.swift in Sources */,
+				FFBAA102221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */,
+				FFBAA0EC221311E600931F3E /* MainSearchControllerCell.swift in Sources */,
+				FFBAA12E2214968900931F3E /* University.swift in Sources */,
+				FFBAA0F422133D9300931F3E /* Images.swift in Sources */,
+				FFBAA0FD22133F9F00931F3E /* Strings.swift in Sources */,
+				FFBAA101221340C500931F3E /* UIVIew+NibInstantiatable.swift in Sources */,
+				FFBAA1302214A25700931F3E /* UniversitySearchProvider.swift in Sources */,
 				FFBAA0E622130F3800931F3E /* DetailViewController.swift in Sources */,
-				FFBAA16E2214D79900931F3E /* UniversitySearchResponse.swift in Sources */,
-				FFBAA1632214D79900931F3E /* UIView+Constraints.swift in Sources */,
-				FFBAA1622214D79900931F3E /* Collection+CollectionExtensions.swift in Sources */,
-				FFBAA16B2214D79900931F3E /* BackendAPIRequest.swift in Sources */,
-				FFBAA1662214D79900931F3E /* UniversitySearchService.swift in Sources */,
-				FFBAA1712214D79900931F3E /* University.swift in Sources */,
+				FFBAA0F322133D9300931F3E /* Segues.swift in Sources */,
+				FFBAA11422143F8B00931F3E /* BackendAPIRequest.swift in Sources */,
+				FFBAA10E22143E1C00931F3E /* CoreError.swift in Sources */,
 				FFBAA0CE22130C1200931F3E /* MainSearchViewController.swift in Sources */,
-				FFBAA15F2214D79900931F3E /* Segues.swift in Sources */,
-				FFBAA15E2214D79900931F3E /* Strings.swift in Sources */,
-				FFBAA16D2214D79900931F3E /* CoreError.swift in Sources */,
-				FFBAA1692214D79900931F3E /* NetworkService.swift in Sources */,
-				FFBAA1652214D79900931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */,
 				FFBAA0CC22130C1200931F3E /* AppDelegate.swift in Sources */,
-				FFBAA1682214D79900931F3E /* ResponseParsedItem.swift in Sources */,
-				FFBAA1702214D79900931F3E /* UniversitySearchRequest.swift in Sources */,
-				FFBAA16C2214D79900931F3E /* BaseBackendService.swift in Sources */,
-				FFBAA1642214D79900931F3E /* UIVIew+NibInstantiatable.swift in Sources */,
-				FFBAA16A2214D79900931F3E /* URLSessionPinningDelegate.swift in Sources */,
-				FFBAA16F2214D79900931F3E /* UniversityLogoRequest.swift in Sources */,
+				FFBAA10B22143DE700931F3E /* URLSessionPinningDelegate.swift in Sources */,
+				FFBAA1062213657A00931F3E /* UIView+Constraints.swift in Sources */,
+				FFBAA12B2214651200931F3E /* Collection+CollectionExtensions.swift in Sources */,
+				FFBAA11722143F8B00931F3E /* BaseBackendService.swift in Sources */,
+				FFBAA10A22143DE700931F3E /* NetworkService.swift in Sources */,
+				FFBAA0F522133D9300931F3E /* Storyboards.swift in Sources */,
+				FFBAA124221444B100931F3E /* UniversitySearchResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +462,14 @@
 				FFBAA0D522130C1300931F3E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FFBAA0FB22133E3900931F3E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFBAA0FA22133E3900931F3E /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

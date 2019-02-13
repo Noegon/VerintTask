@@ -10,7 +10,7 @@ import UIKit
 
 // Better not to use MVC but this project is too small and there is too less time to provide something more complex like MVP or VIP
 class MainSearchViewController: UIViewController {
-    
+
     private var universitySearchProvider: UniversitySearchProvider! // Should be in interactor or presenter
     
     private var searchController: UISearchController?
@@ -133,7 +133,7 @@ extension MainSearchViewController: UITableViewDelegate, UITableViewDataSource {
         // It would be better to obtain and cache logos somwhere in DB to provide quick access without necessity to call network request
         cell.activityIndicatorView.startAnimating()
         universitySearchProvider.obtainLogo(byUniversityDomain: domain,
-                                            onSuccess:
+                                           onSuccess:
             { (image) in
                 if row == indexPath.row {
                     // set logo image into cell
@@ -141,13 +141,13 @@ extension MainSearchViewController: UITableViewDelegate, UITableViewDataSource {
                 }
                 
                 cell.activityIndicatorView.stopAnimating()
-        },
-                                            onFailure:
+            },
+                                           onFailure:
             { (error) in
                 cell.imageView?.image = Asset.emptyUniversity.image
                 
                 cell.activityIndicatorView.stopAnimating()
-        })
+            })
         
         return cell
     }
@@ -203,19 +203,19 @@ fileprivate extension MainSearchViewController {
             tableView.reloadData()
             return
         }
-        
+            
         // This logic also should be somewhere in interactor or presenter
         universitySearchProvider.searchUniversities(byParticialName: name,
-                                                    onSuccess:
+                                                   onSuccess:
             { [weak self] (results) in
                 self?.universities = results
                 self?.tableView.reloadData()
                 self?.refreshControl.endRefreshing()
             },
-                                                    onFailure:
+                                                   onFailure:
             { [weak self] (error) in
                 print(error)
                 self?.refreshControl.endRefreshing()
-        })
+            })
     }
 }
