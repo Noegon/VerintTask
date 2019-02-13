@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainSearchViewController.swift
 //  VerintTask
 //
 //  Created by astafeev on 2/12/19.
