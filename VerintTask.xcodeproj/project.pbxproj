@@ -23,6 +23,16 @@
 		FFBAA101221340C500931F3E /* UIVIew+NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */; };
 		FFBAA102221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */; };
 		FFBAA1062213657A00931F3E /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA1052213657A00931F3E /* UIView+Constraints.swift */; };
+		FFBAA10A22143DE700931F3E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA10822143DE700931F3E /* NetworkService.swift */; };
+		FFBAA10B22143DE700931F3E /* URLSessionPinningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA10922143DE700931F3E /* URLSessionPinningDelegate.swift */; };
+		FFBAA10E22143E1C00931F3E /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA10D22143E1C00931F3E /* CoreError.swift */; };
+		FFBAA11422143F8B00931F3E /* BackendAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA11022143F8B00931F3E /* BackendAPIRequest.swift */; };
+		FFBAA11722143F8B00931F3E /* BaseBackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA11322143F8B00931F3E /* BaseBackendService.swift */; };
+		FFBAA11B221441B900931F3E /* ResponseParsedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA11A221441B900931F3E /* ResponseParsedItem.swift */; };
+		FFBAA1202214420700931F3E /* UniversitySearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA11F2214420700931F3E /* UniversitySearchRequest.swift */; };
+		FFBAA122221443B800931F3E /* UniversityLogoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA121221443B800931F3E /* UniversityLogoRequest.swift */; };
+		FFBAA124221444B100931F3E /* UniversitySearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */; };
+		FFBAA128221455AD00931F3E /* UniversitySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA127221455AD00931F3E /* UniversitySearchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +54,16 @@
 		FFBAA0FF221340C500931F3E /* UIVIew+NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+NibInstantiatable.swift"; sourceTree = "<group>"; };
 		FFBAA100221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiatable.swift"; sourceTree = "<group>"; };
 		FFBAA1052213657A00931F3E /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		FFBAA10822143DE700931F3E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FFBAA10922143DE700931F3E /* URLSessionPinningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionPinningDelegate.swift; sourceTree = "<group>"; };
+		FFBAA10D22143E1C00931F3E /* CoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreError.swift; sourceTree = "<group>"; };
+		FFBAA11022143F8B00931F3E /* BackendAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendAPIRequest.swift; sourceTree = "<group>"; };
+		FFBAA11322143F8B00931F3E /* BaseBackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackendService.swift; sourceTree = "<group>"; };
+		FFBAA11A221441B900931F3E /* ResponseParsedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseParsedItem.swift; sourceTree = "<group>"; };
+		FFBAA11F2214420700931F3E /* UniversitySearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversitySearchRequest.swift; sourceTree = "<group>"; };
+		FFBAA121221443B800931F3E /* UniversityLogoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityLogoRequest.swift; sourceTree = "<group>"; };
+		FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchResponse.swift; sourceTree = "<group>"; };
+		FFBAA127221455AD00931F3E /* UniversitySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +107,7 @@
 		FFBAA0DD22130E4300931F3E /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAA127221455AD00931F3E /* UniversitySearchService.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -103,7 +124,7 @@
 			children = (
 				FFBAA0EF22133A6100931F3E /* Constants */,
 				FFBAA0E322130EF200931F3E /* Views */,
-				FFBAA0EE2213349A00931F3E /* Service layer */,
+				FFBAA0EE2213349A00931F3E /* Model */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -166,18 +187,20 @@
 		FFBAA0ED2213346400931F3E /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAA118221440AC00931F3E /* Core */,
 			);
 			path = Client;
 			sourceTree = "<group>";
 		};
-		FFBAA0EE2213349A00931F3E /* Service layer */ = {
+		FFBAA0EE2213349A00931F3E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAA11C221441CB00931F3E /* Entities */,
 				FFBAA0ED2213346400931F3E /* Client */,
 				FFBAA0DE22130E5900931F3E /* StorageLayer */,
 				FFBAA0DD22130E4300931F3E /* ServiceLayer */,
 			);
-			path = "Service layer";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FFBAA0EF22133A6100931F3E /* Constants */ = {
@@ -224,6 +247,77 @@
 				FFBAA1052213657A00931F3E /* UIView+Constraints.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		FFBAA10722143DE700931F3E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA10822143DE700931F3E /* NetworkService.swift */,
+				FFBAA10922143DE700931F3E /* URLSessionPinningDelegate.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FFBAA10C22143E1C00931F3E /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA10D22143E1C00931F3E /* CoreError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		FFBAA10F22143F8B00931F3E /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA11022143F8B00931F3E /* BackendAPIRequest.swift */,
+				FFBAA11322143F8B00931F3E /* BaseBackendService.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		FFBAA118221440AC00931F3E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA119221441B800931F3E /* Mapping */,
+				FFBAA10F22143F8B00931F3E /* Backend */,
+				FFBAA10C22143E1C00931F3E /* Errors */,
+				FFBAA10722143DE700931F3E /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FFBAA119221441B800931F3E /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA11A221441B900931F3E /* ResponseParsedItem.swift */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		FFBAA11C221441CB00931F3E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA11E221441E100931F3E /* Response */,
+				FFBAA11D221441DA00931F3E /* Request */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FFBAA11D221441DA00931F3E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA11F2214420700931F3E /* UniversitySearchRequest.swift */,
+				FFBAA121221443B800931F3E /* UniversityLogoRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		FFBAA11E221441E100931F3E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAA123221444B100931F3E /* UniversitySearchResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +393,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBAA1202214420700931F3E /* UniversitySearchRequest.swift in Sources */,
+				FFBAA128221455AD00931F3E /* UniversitySearchService.swift in Sources */,
+				FFBAA11B221441B900931F3E /* ResponseParsedItem.swift in Sources */,
+				FFBAA122221443B800931F3E /* UniversityLogoRequest.swift in Sources */,
 				FFBAA102221340C500931F3E /* UIViewController+StoryboardInstantiatable.swift in Sources */,
 				FFBAA0EC221311E600931F3E /* MainSearchControllerCell.swift in Sources */,
 				FFBAA0F422133D9300931F3E /* Images.swift in Sources */,
@@ -306,10 +404,16 @@
 				FFBAA101221340C500931F3E /* UIVIew+NibInstantiatable.swift in Sources */,
 				FFBAA0E622130F3800931F3E /* DetailViewController.swift in Sources */,
 				FFBAA0F322133D9300931F3E /* Segues.swift in Sources */,
+				FFBAA11422143F8B00931F3E /* BackendAPIRequest.swift in Sources */,
+				FFBAA10E22143E1C00931F3E /* CoreError.swift in Sources */,
 				FFBAA0CE22130C1200931F3E /* MainSearchViewController.swift in Sources */,
 				FFBAA0CC22130C1200931F3E /* AppDelegate.swift in Sources */,
+				FFBAA10B22143DE700931F3E /* URLSessionPinningDelegate.swift in Sources */,
 				FFBAA1062213657A00931F3E /* UIView+Constraints.swift in Sources */,
+				FFBAA11722143F8B00931F3E /* BaseBackendService.swift in Sources */,
+				FFBAA10A22143DE700931F3E /* NetworkService.swift in Sources */,
 				FFBAA0F522133D9300931F3E /* Storyboards.swift in Sources */,
+				FFBAA124221444B100931F3E /* UniversitySearchResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

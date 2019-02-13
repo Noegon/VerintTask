@@ -8,9 +8,11 @@
 
 import UIKit
 
+// Better not to use MVC but this project is too small and there is too less time to provide something more complex like MVP or VIP
 class MainSearchViewController: UIViewController {
 
-//    private var searchBar: UISearchBar?
+    private let universitySearchService: UniversitySearchService = UniversitySearchService() // Should be in interactor or presenter
+    
     private var searchController: UISearchController?
     
     @IBOutlet weak var tableView: UITableView!
